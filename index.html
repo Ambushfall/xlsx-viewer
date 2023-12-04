@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!-- xlsx.js (C) 2013-present  SheetJS http://sheetjs.com -->
+<!-- vim: set ts=2: -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>XSLX SheetJs Library</title>
+<!-- Cascading Style Sheets -->
+<link href="css/builder.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<pre>
+Drag and Drop Excel file for auto JSON conversion!
+
+Output Format: <select name="format" id="changerid">
+<option value="csv"> CSV</option>
+<option value="json" selected> JSON</option>
+<option value="form"> Form</option>
+<option value="html"> HTML</option>
+<option value="xlsx"> XLSX</option>
+</select><br />
+<input type="file" name="xlfile" id="xlf" /><br/>
+<input type="button" id="cuts" value="Click Here to Copy the text"><br />
+<!-- <b>Advanced Demo Options:</b> -->
+<!-- Use Web Workers: (when available)  --><input hidden type="checkbox" name="useworker">
+<!-- Use readAsBinaryString: (when available)  --><input hidden type="checkbox" name="userabs" checked>
+
+</pre>
+<pre id="out"></pre>
+<div id="htmlout"></div>
+<div id="drop-zone">
+	<p>Drop a spreadsheet file here to see sheet data</p>
+</div>
+<br />
+</body>
+<script src="js/shim.js"></script>
+<script src="js/xlsx.full.min.js"></script>
+<script src="js/index.js"></script>
+</html>
